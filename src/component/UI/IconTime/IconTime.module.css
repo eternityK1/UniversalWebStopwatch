@@ -1,0 +1,14 @@
+.cnt_time {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-radius: 19px;
+  border: 1px solid indianred;
+  font-size: 58px;
+  font-family: sans-serif;
+  margin-left: 1px;
+  margin-right: 1px;
+}

@@ -1,0 +1,168 @@
+.content {
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* height: 100vh; */
+    box-sizing: border-box;
+}
+
+.menu {
+    height: 67px;
+    background: darkslategrey;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100vw;
+    z-index: 100;
+    transition-property: bottom, opacity;
+    transition-duration: 1s;
+
+}
+
+
+.menu.fullmode {
+    height: 67px;
+    background: darkslategrey;
+    position: fixed;
+    bottom: -31px;
+    opacity: 0;
+    left: 0px;
+    width: 100vw;
+    z-index: 100;
+    transition-property: bottom, opacity;
+    transition-duration: 1s;
+}
+
+.menu.fullmode:hover{
+    bottom: 0;
+    opacity: 1;
+    padding-top:0;
+}
+
+
+.cnt_menu {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    padding-bottom: 5px;
+}
+
+.menu_item {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid teal;
+    text-decoration: none;
+}
+
+.menu_item:hover {
+    background: #374c8d;
+}
+
+.menu_item.active {
+    background: #374c8d;
+}
+
+.link-item-menu {
+    color: #c3c3c3;
+    font-size: 0.7em;
+    font-family: sans-serif;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.img-item-menu {
+    width: 25px;
+    height: 25px;
+    margin: auto;
+    display: block;
+    fill: cadetblue;
+}
+
+.text-item-menu {
+    text-align: center;
+    font-weight: bold;
+}
+
+.cnt-stopwatch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    padding-bottom: 67px;
+    box-sizing: border-box;
+}
+
+.text-timer.fullmode{
+    opacity: 0;
+}
+
+.text-timer {
+    flex: 1;
+    text-align: center;
+    font-size: 1.9em;
+    font-family: sans-serif;
+    flex: 1 1;
+    text-align: center;
+    font-size: 1.9em;
+    font-family: sans-serif;
+    margin-top: 30px;
+    color: #ffffff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    transition-property: opacity;
+    transition-duration: 2s;
+
+}
+
+.timer {
+    flex: 10;
+    display: flex;
+    align-items: center;
+}
+
+button.fullScreen {
+    background: #2d4f4f;
+    border: 0px;
+    padding: 10px;
+    position: absolute;
+    bottom: 90px;
+    right: 11px;
+    opacity: 1;
+    transition-property: opacity, bottom, background;
+    transition-duration: 1s;
+    cursor: pointer;
+    border-radius: 41px;
+}
+
+button.fullScreen:hover{
+    background: #1b1b18;
+}
+
+button.fullScreen div svg{
+    transition-property: opacity, bottom, background;
+    transition-duration: 1s;
+}
+
+button.fullScreen:hover div svg{
+    stroke:#2d4f4f;
+}
+
+button.fullScreen.fullmode{
+    bottom: 23px;
+}
+.fullScreen__icon{
+    width: 30px;
+}
+
+button.fullScreen:hover {
+    opacity: 1;
+}
+
+.fullscreen.fullscreen-enabled{
+    background: #202124;
+}
